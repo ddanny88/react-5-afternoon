@@ -1,3 +1,5 @@
+
+//the initial state of the components that make up the application. 
 const initialState = {
     loanType: 'Home Purchase',
     propertyType: 'Single Family Home',
@@ -35,7 +37,7 @@ const UPDATE_FIRST_NAME = 'UPDATE_FIRST_NAME';
 const UPDATE_LAST_NAME = 'UPDATE_LAST_NAME';
 const UPDATE_EMAIL = 'UPDATE_EMAIL';
 
-
+// store REDUCER: 
 function reducer(state = initialState, action) {
     switch (action.type) {
         case UPDATE_LOAN_TYPE:
@@ -165,7 +167,7 @@ export function updateHistory(history) {
 }
 
 
-export function updateAdressOne(addressOne) {
+export function updateAddressOne(addressOne) {
     return {
         type: UPDATE_ADDRESS_ONE,
         payload: addressOne
